@@ -80,8 +80,6 @@
 		});
 
 		regexStr = '(?<paren>[\\(]\\s*)?(?<url>https?:\/\/[^\\s]+\\.(' + extensionsArr.join('|') + ')[a-zA-Z0-9\\&\\=\\?]*)';
-    
-   console.log(regexStr);
 		// declare regex as global and case-insensitive
 		regex = XRegExp(regexStr, 'gi');
 		winston.info("Imgbed: regex recalculated: " + regexStr);
